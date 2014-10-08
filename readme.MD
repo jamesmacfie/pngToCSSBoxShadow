@@ -13,6 +13,18 @@ Then when you compile your CSS you'll want to include the custom 'boxshadowimage
 
 `sass style.scss style.css -r ./boxshadowimage.rb`
 
+##How to use##
+
+Your .scss file will include the function with a call like this:
+
+```scss
+.yourClass {
+    height: 1px;
+    width: 1px;
+    box-shadow: boxShadowImage('pathToYourImage.png');
+}
+```
+
 ##Example##
 
 If you run the above code within this repo then it'll generate a `css` file with a `.invader` class which takes the `invader.png` file and converts it into a box shadow image. Load up `index.html` to take a look.
